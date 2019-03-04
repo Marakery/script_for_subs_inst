@@ -5,7 +5,7 @@ import random
 
 
 device_id = '8560953769'
-username = 'andreivv'
+username = 'ur_nickname_inst'
 url = 'https://followmania.vip/Send?postTag=c2VsYW1rYW5rYWJ1YmlyYmFzZTY0&device_id=' + device_id
 url_get = 'https://followmania.vip/GetUserInfo?postTag=c2VsYW1rYW5rYWJ1YmlyYmFzZTY0&device_id=' + device_id
 
