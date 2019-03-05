@@ -1,6 +1,4 @@
 '''
-Created on 25 февр. 2019 г.
-
 @author: mrk
 '''
 
@@ -50,10 +48,7 @@ def start():
         enter_data('ENTER DATA', 'red')
     else:
         enter_data('WORKING', 'green')
-            
-    
-    #new_winF()
-        secs = 2
+        secs = 0
         beeper()  # start repeated checking
 
 def beeper():
@@ -112,14 +107,12 @@ class EntryWithPlaceholder(Entry):
 
 if __name__ == '__main__':
 
-
     FREQ = 2500
     DUR = 300
     
     after_id = None
     secs = 0
     counter = 0
-
 
     root = Tk()
     id_account = EntryWithPlaceholder(root, "id")
@@ -135,18 +128,6 @@ if __name__ == '__main__':
         display = Label(newwin, text=string,foreground=color)
         display.pack()   
         newwin.after(2000, lambda: newwin.destroy())
-    
-#     def new_winF(): # new window definition
-#         newwin = Toplevel(root)
-#         display = Label(newwin, text="Working !")
-#         display.pack()   
-#         newwin.after(1000, lambda: newwin.destroy()) 
-
-   # button1=Button(root, text ="open new window", command =new_winF) #command linked
- 
-
-
-
 
     startButton = Button(root, height=2, width=20, text="Start",
                                  command=start)
@@ -158,8 +139,5 @@ if __name__ == '__main__':
     startButton.pack()
     stopButton.pack()
     
-    
-    
- 
     root.mainloop()
 
